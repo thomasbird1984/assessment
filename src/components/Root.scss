@@ -1,0 +1,106 @@
+h1, h2, h3, h4, h5, p, a {
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    transition: all .25s ease-in;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.Root {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    font-family: helvetica, arial, verdana;
+
+    b {
+        font-weight: 500;
+    }
+}
+
+.Row {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.Column {
+    flex: 1;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+
+        small {
+            font-size: .8rem;
+            display: block;
+
+            &.inline {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.FormGroup {
+    display: flex;
+    margin-bottom: 4rem;
+
+    input,
+    button {
+        padding: 1rem;
+        border-radius: 0;
+        border: 1px solid #eee;
+        transition: all .25s ease-in;
+
+        &:hover {
+            border: 1px solid #aaa;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input {
+        flex: 1;
+    }
+
+    button {
+        cursor: pointer;
+        border-left: none;
+        background: #f5f5f5;
+    }
+}
+
+.text {
+    &-small {
+        font-size: 1rem;
+    }
+
+    &-green {
+        color: #71EC46;
+    }
+
+    &-red {
+        color: #CF383E;
+    }
+}
